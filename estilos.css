@@ -54,6 +54,11 @@ table td {
     padding-right: 2px;
 }
 
+ul {
+   display: inline-block;
+   text-align: left; 
+}
+
 #textoPoema {
     font-style: italic;
 }
