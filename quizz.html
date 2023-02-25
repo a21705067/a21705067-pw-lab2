@@ -9,6 +9,10 @@
     <meta name="author" content="Tiago Guerra">
     <meta name="description" content="Website sobre Tóquio">
     <meta name="keywords" content="palavras chave">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,23 +28,25 @@
         </figure>
     </header>
 
-    <nav>
-        <a href="index.html">Introdução</a>
-        <a href="local.html">Localização</a>
-        <a href="multimedia.html">Multimédia</a>
-        <a href="info.html">Informação</a>
-        <a href="quizz.html">Quizz</a>
-        <a href="html5-css.html">Html & CSS</a>
-    </nav>
+    <div>
+        <nav>
+            <a href="index.html" id="menu">🏯 Introdução</a>
+            <a href="local.html" id="menu">🗾 Localização</a>
+            <a href="multimedia.html" id="menu">📷 Multimédia</a>
+            <a href="info.html" id="menu">ℹ️ Informação</a>
+            <a href="quizz.html" id="menu">🎓 Quizz</a>
+            <a href="html5-css.html" id="menu">👌 Html & CSS</a>
+        </nav>
+    </div>
 
     <main>
         <section>
             <h3>Quizz</h3>
-            <p>Nesta página vamos testar os seus conhecimentos Será que conhece realmente Tóquio?</p>
+            <p>Nesta página vamos testar os seus conhecimentos. Será que realmente conhece Tóquio?</p>
         </section>
 
         <form method="POST" action="mailto: a21705067@alunos.ulusofona.pt" enctype="multipart/form-data">
-            <fieldset name="quizz" >
+            <fieldset id="quizzSection" name="quizz" >
                Quizz sobre Tóquio
             </fieldset>
             <fieldset>
@@ -53,7 +59,7 @@
                     <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                 </fieldset>
              </fieldset>
-             <fieldset name="perguntas">
+             <fieldset id="quizzSection" name="perguntas">
                 Perguntas
              </fieldset>
              <fieldset>

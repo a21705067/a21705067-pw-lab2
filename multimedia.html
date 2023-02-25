@@ -17,6 +17,10 @@
     <meta name="author" content="Tiago Guerra">
     <meta name="description" content="Website sobre Tóquio">
     <meta name="keywords" content="palavras chave">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,46 +36,64 @@
         </figure>
     </header>
 
-    <nav>
-        <a href="index.html">Introdução</a>
-        <a href="local.html">Localização</a>
-        <a href="multimedia.html">Multimédia</a>
-        <a href="info.html">Informação</a>
-        <a href="quizz.html">Quizz</a>
-        <a href="html5-css.html">Html & CSS</a>
-    </nav>
+    <div>
+        <nav>
+            <a href="index.html" id="menu">🏯 Introdução</a>
+            <a href="local.html" id="menu">🗾 Localização</a>
+            <a href="multimedia.html" id="menu">📷 Multimédia</a>
+            <a href="info.html" id="menu">ℹ️ Informação</a>
+            <a href="quizz.html" id="menu">🎓 Quizz</a>
+            <a href="html5-css.html" id="menu">👌 Html & CSS</a>
+        </nav>
+    </div>
 
     <main>
-        <section>
-            <h2>Multimédia</h2>
-            <p>
-                Video informativo sobre Tóquio.
-            </p>
-            <figure>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/u8mcpHkfE3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </figure>
-        </section>
-    </main>
+        <h3 id="multimedia">Multimédia</h3>
+        <a href="#video">Video</a>
+        <a href="#fotografias">Fotografias</a>
+        <a href="#poema">Poema</a>
 
-    <p>
-        Imagens
-    </p>
-    <table>
-        <tr>
-            <figure>
-                <th><img src="images\Skyscrapers_of_Shinjuku_2009_January.jpg" height="200px" width="300px"></th>
-                <th><img src="images\Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg" height="200px" width="300px"></th>
-                <th><img src="images\Diet_of_Japan_Kokkai_2009.jpg" height="200px" width="300px"></th>
-            </figure>
-        </tr>
-        <tr>
-            <figure>
-                <th><img src="images\toquio1.jpg" height="200px" width="300px"></th>
-                <th><img src="images\toquio2.jpg" height="200px" width="300px"></th>
-                <th><img src="images\147px-Rainbow_colored_Rainbow_Bridge_at_night.jpg" height="200px" width="300px"></th>
-            </figure>
-        </tr>
-    </table>
+        <div>
+            <section>
+                <h3 id="video">Video</h3>
+                <p>
+                    Video informativo sobre Tóquio.
+                </p>
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u8mcpHkfE3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </figure>
+            </section>
+
+            <section>
+            <h3 id="fotografias">Fotografias</h3>
+                <table class="table_center">
+                    <tr>
+                        <figure>
+                            <th><img src="images\akihabara_pequena.jpg" onclick="document.getElementsByName('foto')[0].src='images/akihabara_grande.jpg'" alt="Akihabara"></a></th>
+                            <th><img src="images\mount_fuji_pequena.jpg" onclick="document.getElementsByName('foto')[0].src='images/mount_fuji_grande.jpg'" alt="Mount Fuji"></th>
+                            <th><img src="images\shibuya-crossing_pequena.jpg" onclick="document.getElementsByName('foto')[0].src='images/shibuya-crossing_grande.jpg'" alt="Shibuya Crossing"></th>
+                            <th><img src="images\tokyo-japan-asakusa-temple-sunset_pequena.jpg" onclick="document.getElementsByName('foto')[0].src='images/tokyo-japan-asakusa-temple-sunset_grande.jpg'" alt="Asakusa Temple"></th>
+                        </figure>
+                    </tr>
+                </table>
+                <iframe name="foto" width="600" height="400" src="images\akihabara_grande.jpg"></iframe>
+            </section>
+
+            <section>
+                <h3 id="poema">Poema</h3>
+                <span>Título: Tokyo</span><br>
+                <span>Autor: Ceyhun Mahi</span>
+                <p id="textoPoema" name="textoPoema">
+                    “All places of Tokyo change at night,<br>
+                    Streets are flowing rivers of gleamy light,<br>            
+                    Lit-neon signs glowing at every sight,<br>            
+                    Under the glamorous buildings up high,<br>            
+                    Who are standing under the blue night sky.”
+                </p>
+            </section>
+        </div>
+
+    </main>
 
     <footer>
         <div>

@@ -6,9 +6,13 @@
     <title>
         Tóquio
     </title>
-    <meta name="author" content="Tiago Guerra">
+    <meta name="autdor" content="Tiago Guerra">
     <meta name="description" content="Website sobre Tóquio">
     <meta name="keywords" content="palavras chave">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,21 +21,23 @@
             Tóquio
         </h1>
         <figure>
-            <img src="images\toquio-mt-fuji.jpg" alt="Tóquio" width="300px">
+            <img src="images\toquio-mt-fuji.jpg" alt="Tóquio" widtd="300px">
             <details>
             <figcaption>Monte Fuji</figcaption>
             </details>
         </figure>
     </header>
 
-    <nav>
-        <a href="index.html">Introdução</a>
-        <a href="local.html">Localização</a>
-        <a href="multimedia.html">Multimédia</a>
-        <a href="info.html">Informação</a>
-        <a href="quizz.html">Quizz</a>
-        <a href="html5-css.html">Html & CSS</a>
-    </nav>
+    <div>
+        <nav>
+            <a href="index.html" id="menu">🏯 Introdução</a>
+            <a href="local.html" id="menu">🗾 Localização</a>
+            <a href="multimedia.html" id="menu">📷 Multimédia</a>
+            <a href="info.html" id="menu">ℹ️ Informação</a>
+            <a href="quizz.html" id="menu">🎓 Quizz</a>
+            <a href="html5-css.html" id="menu">👌 Html & CSS</a>
+        </nav>
+    </div>
     
     <main>
         <section>
@@ -42,41 +48,49 @@
         </section>
     
 
-        <table>
+        <table class="table_center" border="2px">
             <tr>
-                <th align="left">País</th>
-                <td><img src="images\Flag_of_Japan.svg.webp"> Japão</td>
+                <td align="left">País</td>
+                <td><img src="images\Flag_of_Japan.svg.webp" border="1px"> Japão</td>
+                <td rowspan="10"><img src="images\samurai-warrior.webp" width="200"></td>
             </tr>
             <tr>
-                <th align="left">Região</th>
+                <td align="left">Imperador</td>
+                <td>Naruhito</td>
+            </tr>
+            <tr>
+                <td align="left">Região</td>
                 <td>Kantō</td>
             </tr>
             <tr>
-                <th align="left">Fundação</th>
+                <td align="left">Fundação</td>
                 <td>1457</td>
             </tr>
             <tr>
-                <th align="left">Área total</th>
+                <td align="left">Área total</td>
                 <td>2 194 km²</td>
             </tr>
             <tr>
-                <th align="left">População</th>
+                <td align="left">População</td>
                 <td>13,96 milhões</td>
             </tr>
             <tr>
-                <th align="left">Densidade</th>
+                <td align="left">Densidade</td>
                 <td>6 354 hab./km²</td>
             </tr>
             <tr>
-                <th align="left">Moeda</th>
+                <td align="left">Moeda</td>
                 <td>Iene</td>
             </tr>
             <tr>
-                <th align="left">Fuso horário</th>
+                <td align="left">Fuso horário</td>
                 <td>+9 horas (GMT)</td>
             </tr>
+            <tr>
+                <td colspan="2">Top 3 desportos: Basebol, Sumo, Futebol</td>
+            </tr>
         </table>
-
+        <br>
     </main>
 
     <footer>
