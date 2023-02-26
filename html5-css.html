@@ -21,7 +21,7 @@
             Tóquio
         </h1>
         <figure>
-            <img src="images\toquio-mt-fuji.jpg" alt="Tóquio" width="300px">
+            <img src="images\toquio-mt-fuji.jpg" alt="Tóquio">
             <details>
             <figcaption>Monte Fuji</figcaption>
             </details>
@@ -39,11 +39,13 @@
         </nav>
     </div>
 
+    <h2><a href="#html">HTML5</a> e <a href="#css">CSS</a></h2>
+
     <main>
-        <h3>HTML5 e CSS</h3>
+        <h3 id="html">HTML5</h3>
         <section>
             <p>HTML5 (Hypertext Markup Language, versão 5) é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet.</p>
-            <table>
+            <table class="table_center">
                 <tr>
                     <th>Elementos semântico</th>
                     <th>Utilizado</th>
@@ -111,17 +113,11 @@
                 </tr>
             </table>
 
+            <h3 id="css">CSS</h3>
             <section>
                 <p>Cascading Style Sheets (abreviado CSS) é um mecanismo para adicionar estilos (cores, fontes, espaçamento, etc.) a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags</style></p>
-                <table>
-                    <tr>
-                        <th>Selectores</th>
-                        <th>Utilizado</th>
-                        <th>Descrição</th>
-                    </tr>
-                </table>
                 <br>
-                <table>
+                <table class="table_center">
                     <tr>
                         <th>Selectores</th>
                         <th>Utilizado</th>
@@ -129,28 +125,28 @@
                     </tr>
                     <tr>
                         <td>universal</td>
-                        <td>✔</td>
-                        <td>Utilizado em todas as páginas</td>
-                    </tr>
-                    <tr>
-                        <td>tipo</td>
-                        <td>✔</td>
-                        <td>Utilizado em todas as páginas</td>
-                    </tr>
-                    <tr>
-                        <td>classe</td>
-                        <td>✔</td>
-                        <td>Utilizado em todas as páginas</td>
-                    </tr>
-                    <tr>
-                        <td>id</td>
                         <td>❌</td>
                         <td>Não utilizado</td>
                     </tr>
                     <tr>
-                        <td>atributo</td>
+                        <td>tipo</td>
                         <td>✔</td>
-                        <td>Utilizado em todas as páginas</td>
+                        <td>Utilizado na página quizz</td>
+                    </tr>
+                    <tr>
+                        <td>classe</td>
+                        <td>✔</td>
+                        <td>Utilizado nas páginas multimedia, info e html5-css</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>✔</td>
+                        <td>Utilizado nas páginas multimedia, quizz e html5-css</td>
+                    </tr>
+                    <tr>
+                        <td>atributo</td>
+                        <td>❌</td>
+                        <td>Não utilizado</td>
                     </tr>
                     <tr>
                         <td>pseudo-classe</td>
@@ -159,8 +155,41 @@
                     </tr>
                     <tr>
                         <td>pseudo-elemento</td>
+                        <td>❌</td>
+                        <td>Não utilizado</td>
+                    </tr>
+                </table>
+                <br>
+                <table class="table_center">
+                    <tr>
+                        <th>Selectores</th>
+                        <th>Utilizado</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>descendentes espaço</td>
                         <td>✔</td>
-                        <td>Utilizado em todas as páginas</td>
+                        <td>Utilizado na página quizz para estilizar as tags p e input</td>
+                    </tr>
+                    <tr>
+                        <td>filhos ></td>
+                        <td>✔</td>
+                        <td>Utilizado em todas as páginas para estilizar a tag h1 do header</td>
+                    </tr>
+                    <tr>
+                        <td>adjacentes ~</td>
+                        <td>❌</td>
+                        <td>Não utilizado</td>
+                    </tr>
+                    <tr>
+                        <td>imediatamente adjacente +</td>
+                        <td>✔</td>
+                        <td>Utilizado nas páginas multimedia, quizz e html5-css para estilizar tag h2</td>
+                    </tr>
+                    <tr>
+                        <td>agrupar ,</td>
+                        <td>✔</td>
+                        <td>Utilizado nas páginas multimedia, info e html5-css para estilizar tabelas</td>
                     </tr>
                 </table>
             </section>

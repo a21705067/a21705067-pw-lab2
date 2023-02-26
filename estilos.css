@@ -4,7 +4,7 @@ header {
     text-align: center;
 }
 
-header h1 {
+header > h1 {
     background-color: rgb(0, 24, 241);
     padding: 10px 10px;
     color: white;
@@ -14,18 +14,24 @@ nav {
     text-align: center;
 }
 
+div + h2 {
+    text-align: center;
+}
+
 main {
     text-align: center;
 }
 
-section {
-    padding: 20px;
-}
+/* section {
+    padding: 10px;
+} */
 
 footer {
     text-align: center;
     background-color: rgb(0, 24, 241);
     padding: 5px 5px;
+    margin-top: 10px;
+    
     color: white;
 }
 
@@ -47,11 +53,38 @@ a:active {color: red;
 .table_center {
     margin-left: auto;
     margin-right: auto;
-}          
+    border-style: solid;
+}
 
-table td {
-    padding-left: 2px;
-    padding-right: 2px;
+.tabela_figuras {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.figuras {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #59d2fe;
+}
+
+td, th {
+    border: 1px solid #ffb7c5;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: lightblue;}
+
+tr:hover {
+    background-color: blue;
+    color: white;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: blue;
+    color: white;
 }
 
 ul {
@@ -61,4 +94,55 @@ ul {
 
 #textoPoema {
     font-style: italic;
+}
+
+img {
+    border:4px solid #ffb7c5;
+    color: black;
+}
+
+.flag {
+    border: 1px solid;
+}
+
+iframe {
+    border:4px solid #ffb7c5; 
+}
+
+input {
+    display: inline-block;
+}
+
+#quizzSection {
+    background-color: blue;
+    color: white;
+}
+
+fieldset > p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-top: 30px; 
+}
+
+#info {
+    text-align: left;
+}
+
+#info input {
+    margin-right: 10px;
+}
+
+fieldset p {
+    font-weight: bold;
+}
+
+#html {
+    margin-top: 30px;
+}
+
+#css {
+    margin-top: 30px;
 }

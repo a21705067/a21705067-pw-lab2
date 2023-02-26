@@ -21,7 +21,7 @@
             Tóquio
         </h1>
         <figure>
-            <img src="images\toquio-mt-fuji.jpg" alt="Tóquio" width="300px">
+            <img src="images\toquio-mt-fuji.jpg" alt="Tóquio">
             <details>
             <figcaption>Monte Fuji</figcaption>
             </details>
@@ -50,19 +50,18 @@
                Quizz sobre Tóquio
             </fieldset>
             <fieldset>
-                <fieldset>
+                <legend align="left">Informação</legend>
+                <fieldset id="info">
                     <label>Nome</label>
-                    <input type="text" id="nome" required autofocus>
+                    <input type="text" id="nome" required autofocus placeholder="Nome">
                     <label>Apelido</label>
-                    <input type="text" id="apelido" required>
+                    <input type="text" id="apelido" required placeholder="Apelido">
                     <label>Email</label>
-                    <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="Email">
                 </fieldset>
              </fieldset>
-             <fieldset id="quizzSection" name="perguntas">
-                Perguntas
-             </fieldset>
              <fieldset>
+                <legend align="left">Perguntas</legend>
                 <fieldset>
                     <p>1. É a capital de que país?</p>
                         <input type="text" id="pais" autocomplete="off" size="10" required>
@@ -82,13 +81,13 @@
                         <label for="oceania">Oceania</label>                          
                     <p>3. Qual o ano de fundação?</p> 
                         <input type="radio" id="1402" name="fundacao" value="1402">
-                        <label for="1402">1402</label><br>
+                        <label for="1402">1402</label>
                         <input type="radio" id="1457" name="fundacao" value="1457">
-                        <label for="1457">1457</label><br>
+                        <label for="1457">1457</label>
                         <input type="radio" id="1575" name="fundacao" value="1575">
-                        <label for="1575">1575</label><br>
+                        <label for="1575">1575</label>
                         <input type="radio" id="1520" name="fundacao" value="1520">
-                        <label for="1520">1520</label><br>
+                        <label for="1520">1520</label>
                     <p>4. Qual a cor predominante da bandeira de Tokyo?</p>    
                         <input type="color" id="color1" value="#FFFFFF">       
                     <p>5. Qual a moeda que é utilizada?</p>
@@ -100,39 +99,39 @@
                         </select>      
                     <p>6. Quais a comidas típicas japonesas?</p>
                         <input type="checkbox" name="pizza" value="pizza">
-                        <label for="pizza">Pizza</label><br>
+                        <label for="pizza">Pizza</label>
                         <input type="checkbox" name="ramen" value="ramen">
-                        <label for="ramen">Ramen</label><br>
+                        <label for="ramen">Ramen</label>
                         <input type="checkbox" name="sushi" value="sushi">
-                        <label for="sushi">Sushi</label><br>
+                        <label for="sushi">Sushi</label>
                         <input type="checkbox" name="kungpao" value="kungpao">
-                        <label for="kungpao">Kung Pao Chicken</label><br>
+                        <label for="kungpao">Kung Pao Chicken</label>
                         <input type="checkbox" name="miso" value="miso">
-                        <label for="miso">Sopa Miso</label><br>
+                        <label for="miso">Sopa Miso</label>
                         <input type="checkbox" name="cozido" value="cozido">
-                        <label for="cozido">Cozido à Portuguesa</label><br>
+                        <label for="cozido">Cozido à Portuguesa</label>
                     <p>7. Qual é o nome do famoso cruzamento em Tóquio onde centenas de pessoas atravessam a rua ao mesmo tempo?</p>
-                        <input type="radio" name="cruzamento" value="a"> Shibuya Crossing<br>
-                        <input type="radio" name="cruzamento" value="b"> Tokyo Tower<br>
-                        <input type="radio" name="cruzamento" value="c"> Meiji Shrine<br>
+                        <input type="radio" name="cruzamento" value="a"> Shibuya Crossing
+                        <input type="radio" name="cruzamento" value="b"> Tokyo Tower
+                        <input type="radio" name="cruzamento" value="c"> Meiji Shrine
                     <p>8. Em que ano Tóquio sediou os Jogos Olímpicos pela primeira vez?</p>
                         <input type="number" id="jogos" name="jogos" min="1900" max="2023" required>    
                     <p>9. Quando é que começa o próximo Cherry Blossom festival?</p>
                         <input type="date" id="cherry" name="cherry" min="0" max="5" required>      
                     <p>10. O quanto gostaste deste quizz? (Escala de 0 a 5)</p>
-                        <input type="range" id="escala" name="escala" min="0" max="5"><br><br>      
+                        <input type="range" id="escala" name="escala" min="0" max="5">     
+                    <br>    
                     <textarea id="comentarios" name="comentarios" maxlength="256" rows="6" cols="50">O seu feedback é importante para melhorar o quizz 😊</textarea>
                     <br>
                     <input type="submit">    
                 </fieldset>
-             </fieldset>
-             
+             </fieldset>            
         </form>
     </main>
 
     <footer>
         <div>
-            <span>Tiago Guerra | a21705067 | Universidade Lusófona | 2023 </span>
+            <span>Tiago Guerra | a21705067 | Universidade Lusófona | 2023</span>
         </div>
     </footer>
 </body>
